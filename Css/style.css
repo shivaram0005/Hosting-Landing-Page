@@ -19,6 +19,9 @@ body{
     position: relative;
     top: 30px;
 }
+.nav-bar .barss{
+    display: none;
+}
 .nav-bar .nav-logo img{
     width: 100px;
 }
@@ -422,4 +425,99 @@ cursor: pointer;
     margin-right: 10px;
     margin-top: 10px;
     width: 30px;
+}
+
+
+
+/* media-quaries */
+
+@media screen and (max-width:1450px) {
+    .nav-bar .grow{
+        display: none;
+    }
+    .nav-bar button{
+        display: none;
+    }
+    .nav-bar .barss{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:1300px) {
+    .content .content-description{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content .content-description .left-description h1{
+        font-size: 30px;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services .services-description  h1{
+        font-size: 25px;
+        margin-right: 50px;
+    }
+    .pricing-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pricing-wrapper .pricing{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .customer{
+        text-align: center;
+    }
+    .customer .customer-description h2{
+        font-size: 25px;
+    }
+    .customer .customer-description p{
+        font-size: 15px;
+        text-align: center;
+        width: fit-content;
+        position: relative;
+        left: -20px;
+    }
+    .customer .customer-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .customer .customer-cards .customer-card{
+        margin-bottom: 20px;
+    }
+    .register{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    .register .register-left h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .register .register-left p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .register .register-right button{
+        text-align: center;
+        position: relative;
+        left: 40px;
+       
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .four{
+        position: relative;
+        top: 25px;
+    }
+    .footer .five{
+        position: relative;
+        top: 25px;
+    }
 }
